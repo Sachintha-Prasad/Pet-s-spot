@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/background1.jpg);
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+/* navbar  */
+
+.navbar {
+  display: flex;
+  /* background-color: aqua; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.nav-links ul {
+  display: flex;
+  /* background-color: blueviolet; */
+  align-items: center;
+  text-decoration: none;
+  gap: 30px;
+}
+
+.nav-links ul li {
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: #f53628;
+  display: block;
+  margin: auto;
+  transition: 0.7s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.nav-links ul .active {
+  background-color: #f53628;
+  padding: 1px 10px;
+}
+
+/* navbar  */
+
+/* content  */
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  margin: 50px;
+}
+
+.textbox h1 {
+  display: inline-block;
+  font-size: 60px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.textbox h1 span {
+  color: #f53628;
+}
+
+.textbox p {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.textbox .shop-btn {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  transition: 0.7s;
+}
+
+.textbox .shop-btn:hover {
+  border: 2px solid #f53628;
+  background-color: #f53628;
+}
+/* content  */
